@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb-Toggler</title>
+</head>
+
+<body>
+    <img src="bulb-off.jpg" id="img-bulb" />
+
+    <button type="button" onclick="bulbOn()">ON</button>
+    <button type="button" onclick="bulbOff()">OFF</button>
+
+    <script>
+        function bulbOn() {
+            const bulbElement = document.getElementById("img-bulb");
+            bulbElement.src="bulb-on.png";
+        }
+        function bulbOff() {
+            const bulbElement = document.getElementById("img-bulb");
+            bulbElement.src="bulb-off.jpg";
+        }
+    </script>
+</body>
+
+</html>
